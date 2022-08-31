@@ -1,5 +1,7 @@
 package view;
 
+import java.awt.event.ActionListener;
+
 import javax.swing.JFrame;
 
 import view.calc.CalcPanel;
@@ -29,4 +31,10 @@ public class MainView extends JFrame {
 
 	}
 
+	public void addActionListenerToBtnBerrechne(ActionListener al) {
+		this.getCalcPanel().addActionListenerToBtnBerrechne(al);
+		
+	}
+	
+	
 }
