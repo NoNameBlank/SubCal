@@ -35,6 +35,19 @@ public class MainView extends JFrame {
 		this.getCalcPanel().addActionListenerToBtnBerrechne(al);
 		
 	}
+
+	//Muss man zwei getDataFrom....  Methoden  machen?
+	public String getDataFromInputfieldIP() {
+		// TODO Auto-generated method stub
+		return this.getCalcPanel().getIpEingabe().getText();
+		
+		
+	}
+
+	public String getDataFromInputfieldHost() {
+		
+	 return this.getCalcPanel().getHostEingabe().getText();
+	}
 	
 	
 }
