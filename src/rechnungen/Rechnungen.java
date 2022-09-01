@@ -8,10 +8,12 @@ public class Rechnungen extends CalcPanel {
 		
 		
 		String ipEingabe;
+		int ipEingabeZahl;
 		
 		ipEingabe = getIpEingabe().getText();
+		//ipEingabeZahl = Integer.parseInt(ipEingabe);
 		System.out.println("Klasse: Rechnungen      ipEingabeTextfield Ausgabe: " + ipEingabe);
-		
+		//System.out.println("Ip als int : " + ipEingabeZahl);
 		
 		
 		

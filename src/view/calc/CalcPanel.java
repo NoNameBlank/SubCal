@@ -150,7 +150,7 @@ public class CalcPanel extends JPanel {
 		ausAnzahlSub.setBounds(442, 365, 124, 32);
 		super.add(ausAnzahlSub);
 
-		this.setIpEingabe(new JTextField());
+		this.setIpEingabe(new JTextField(16));
 		this.getIpEingabe().setBounds(266, 98, 128, 20);
 		super.add(this.getIpEingabe());
 
@@ -200,5 +200,10 @@ public class CalcPanel extends JPanel {
 	}
 	
 	
-	
+	public CalcPanel(String ipAdresse) {
+		this();
+		this.getIpEingabe().setText(ipAdresse);
+		System.out.println("CalcPanel Ausgabe IP Adresse? : " + ipAdresse);
+		
+	}
 }
