@@ -2,16 +2,23 @@ package rechnungen;
 
 public class Model {
 
-	public void berechne(String inputIP, String inputHost) {
+	public void berechne(String[] arrdata) {
 
+		String inputIP = arrdata[0];
+		String anzahlHost = arrdata[1];
 		
-		System.out.println("Ausgabe in berechne(): " + inputIP);
+		System.out.println("IP Ausgabe: " + inputIP);
+		System.out.println("Host Ausgabe:" + anzahlHost);
+		
 		//System.out.println("Ausgabe in berechne(): " + inputHost);
-		String ip ="192.168.0.1";
-		//String split[] = StringUtils.split(ip, ".";)
-		//String[] arrOfIp = ip.split(".");
-		//for (String ausgabe : arrOfIp)
-			//System.out.println("Ausgabe nach dem String geteilt wurde " + ausgabe);
+		
+		//UserEingabe wird ip übergeben und gesplittet
+		
+		//String split[] = ip.split(".");
+		String[] arrOfIp = inputIP.split("\\.");
+		for(int i = 0; i < arrOfIp.length; i++) {
+			System.out.println(arrOfIp[i]);
+		}
 		
 		//String ipBinaerErgebnis = ipInBinaer(inputIP);
 		//System.out.println("Ausgabe in berechne ipBinaer" + inputIP);
