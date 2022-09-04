@@ -1,5 +1,7 @@
 package rechnungen;
 
+import java.util.Arrays;
+
 public class Model {
 
 	public void berechne(String[] arrdata) {
@@ -11,7 +13,7 @@ public class Model {
 		System.out.println("Host Ausgabe:" + anzahlHost);
 
 		String[] arrOfIp = inputIP.split("\\.");
-		String[] arrIfIpNullen = null;
+		String[] arrOfIpNullen = null;
 		String binOfIp;
 		String binOfIpNull; // mit 0 aufgefüllt
 
@@ -36,14 +38,12 @@ public class Model {
 
 			binOfIpNull = String.format("%8s", binOfIp).replaceAll(" ", "0"); // Pro Oktate 8 Bit
 			System.out.println("IP in Binaer mit 0 aufgefuellt: " + binOfIpNull);
-
-			for (int ii = 0; ii < arrOfIp.length; ii++) {
-					arrIfIpNullen[i] = binOfIpNull;
-				
-			}
+			//muss ich da in einer Schleife noch zusätzlich machen?
+			Arrays.fill(arrOfIpNullen, binOfIp);
 
 		}
-
+		System.out.println("Ausgabe von der IP in Binaer: " + arrOfIpNullen);
+		
 		// Die IP wurde in die 4 Okteten gesplittet
 		// Nächster Schritt die in einen Binary String zu konvertieren
 
