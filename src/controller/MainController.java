@@ -38,7 +38,7 @@ public class MainController {
 	private void startBerechnung(ActionEvent e) {
 		String[] input = this.getMainView().getDataFromInputfieldIpHost();
 		
-		//String [1] inputHos = this.getMainView().getDat
+	
 		this.getModel().berechne(input);
 		
 	}

@@ -44,9 +44,6 @@ public class MainView extends JFrame {
 
 	}
 
-	// public String getDataFromInputfieldHost() {
-
-	// return this.getCalcPanel().getHostEingabe().getText();
-	// }
+	
 
 }
