@@ -22,10 +22,9 @@ public class MainView extends JFrame {
 
 		super.setBounds(0, 0, 1024, 768);
 		super.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		
+
 		this.setCalcPanel(new CalcPanel());
 		super.add(this.getCalcPanel());
-		
 
 		super.setVisible(true);
 
@@ -33,8 +32,18 @@ public class MainView extends JFrame {
 
 	public void addActionListenerToBtnBerrechne(ActionListener al) {
 		this.getCalcPanel().addActionListenerToBtnBerrechne(al);
-		
+
 	}
+
+	// Muss man zwei getDataFrom.... Methoden machen?
+	public String[] getDataFromInputfieldIpHost() {
+		String ip = this.getCalcPanel().getIpEingabe().getText();
+		String host = this.getCalcPanel().getHostEingabe().getText();
+		String[] data = {ip, host};
+		return data;
+
+	}
+
 	
-	
+
 }

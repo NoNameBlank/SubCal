@@ -105,7 +105,7 @@ public class CalcPanel extends JPanel {
 
 	public CalcPanel() {
 
-		setLayout(null);
+		super.setLayout(null);
 		super.setBounds(0, 0, 1024, 768);
 		super.setBackground(Color.WHITE);
 		super.setOpaque(true);
@@ -200,10 +200,5 @@ public class CalcPanel extends JPanel {
 	}
 	
 	
-	public CalcPanel(String ipAdresse) {
-		this();
-		this.getIpEingabe().setText(ipAdresse);
-		System.out.println("CalcPanel Ausgabe IP Adresse? : " + ipAdresse);
-		
-	}
+	
 }
