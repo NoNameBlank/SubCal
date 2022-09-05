@@ -41,6 +41,8 @@ public class MainController {
 	
 		this.getModel().berechne(input);
 		
+		//this.getMainView().getCalcPanel().getErgSubnetzmaske().setText(getMainView().getName()));
+		this.getMainView().getCalcPanel().getErgSubnetzmaske().setText("" + this.getModel().getBitFest());
 	}
 
 }
